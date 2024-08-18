@@ -40,6 +40,11 @@ h1 {
   background-color: rgb(216, 216, 216);
 
   text-align: center;
+
+  position: relative; /* Required for the shadow effect to work properly */
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3), /* Shadow below the key */
+    0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
 }
 .black-key {
   background-color: black;
