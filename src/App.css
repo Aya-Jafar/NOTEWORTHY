@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.pianoPage {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1 {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.piano {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 10px 400px rgba(0, 255, 195, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.piano::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 400px rgba(0, 255, 195, 0.7);
+  pointer-events: none;
+  z-index: -1; /* Ensure it stays behind content */
+}
+
+.white-key {
+  border: 1px solid #000000;
+  width: 80px;
+  height: 250px;
+  background-color: rgb(216, 216, 216);
+  text-align: center;
+}
+.black-key {
+  background-color: black;
+  width: 28px;
+  height: 155px;
+  margin-left: -30px;
+  margin-right: -25px;
+  z-index: 1;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.white-key-text {
+  position: fixed;
+  bottom: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgb(0, 0, 0); /* Or white if black key */
+}
+
+.black-key-text {
+  position: fixed;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255); /* Or white if black key */
 }
