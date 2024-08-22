@@ -76,3 +76,8 @@ h1 {
   margin-left: 10px;
   color: rgb(255, 255, 255); /* Or white if black key */
 }
+
+.active {
+  background-color: yellow; /* Example active state color */
+}
+
