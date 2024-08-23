@@ -42,9 +42,8 @@ h1 {
   text-align: center;
 
   position: relative; /* Required for the shadow effect to work properly */
-  box-shadow: 
-    0 4px 6px rgba(0, 0, 0, 0.3), /* Shadow below the key */
-    0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),
+    /* Shadow below the key */ 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
 }
 .black-key {
   background-color: black;
@@ -77,7 +76,47 @@ h1 {
   color: rgb(255, 255, 255); /* Or white if black key */
 }
 
-.active {
-  background-color: yellow; /* Example active state color */
+/* .active {
+  background: linear-gradient(180deg, #ce3678, #F7B7F0);
+
+} */
+
+.white-key-active-o3 {
+  background-color: #cc8888; /* Darker pink for octave 3 */
 }
 
+.white-key-active-o4 {
+  background-color: #8ce9c2; /* Light green for octave 4 */
+}
+
+.white-key-active-o5 {
+  background-color: #8888cc; /* Light blue for octave 5 */
+}
+
+.white-key-active-o6 {
+  background-color: #ffffdd; /* Light yellow for octave 6 */
+}
+
+.white-key-active-o7 {
+  background-color: #ffddff; /* Light purple for octave 7 */
+}
+
+.black-key-active-o3 {
+  background-color: #cc8888; /* Darker pink for octave 3 */
+}
+
+.black-key-active-o4 {
+  background-color: #8ce9c2; /* Darker green for octave 4 */
+}
+
+.black-key-active-o5 {
+  background-color: #8888cc; /* Darker blue for octave 5 */
+}
+
+.black-key-active-o6 {
+  background-color: #cccc88; /* Darker yellow for octave 6 */
+}
+
+.black-key-active-o7 {
+  background-color: #cc88cc; /* Darker purple for octave 7 */
+}
