@@ -1,5 +1,18 @@
 body {
   background-color: #000000;
+  color: white;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.logo-header img {
+  width: 37%;
+  margin-top: 4px;
 }
 
 .pianoPage {
@@ -119,4 +132,30 @@ h1 {
 
 .black-key-active-o7 {
   background-color: #cc88cc; /* Darker purple for octave 7 */
+}
+
+.past-keys-container {
+  width: 30%;
+  max-height: 100px;
+  display: flex;
+  /* flex-direction: column;  */
+  gap:5px;
+  overflow-y: auto; /* Enable scrolling here */
+
+  padding: 15px;
+  margin-left: 20px;
+  border: 0.1px solid rgba(255, 255, 255, 0.606);
+  border-radius: 15px;
+}
+
+.past-keys-wrapper {
+  overflow-y: auto; /* Enable scrolling here */
+  max-height: 100px;
+  width: 90%;
+}
+
+.past-keys-container h2 {
+  font-weight: 200;
+  word-break: break-word;
+  white-space: normal;
 }

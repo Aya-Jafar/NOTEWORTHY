@@ -9,20 +9,21 @@
 //=================================================================================================================================
 
 import React, { useEffect, useRef } from "react";
-import TestOscillator from "./testOscillator";
 import "./App.css";
 import Piano from "./components/Piano";
+import { Music2 , ListMusic , Music} from "lucide-react";
 
 function App() {
   return (
     <div className="App">
-      <TestOscillator />
-      <h1>Digital Piano</h1>
+      <div className="logo-header">
+        {/* <h1>Noteworthy</h1> */}
+        <Music2 size={50} color="#EA9054" />
+        <img src="/logo.jpg" alt="" />
+      </div>
       <Piano />
     </div>
   );
 }
 
 export default App;
-
-
